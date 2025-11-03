@@ -34,7 +34,7 @@ composer require vzhabonos/php-whois
 or composer.json:
 ````
 "require": {
-    "vzhabonos/php-whois": "^4.0"
+    "vzhabonos/php-whois": "^1.0"
 }
 ````
 
