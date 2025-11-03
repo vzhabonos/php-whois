@@ -1,7 +1,7 @@
 # PHP WHOIS
 
 [![PHP version](https://img.shields.io/badge/php-%3E%3D7.2-8892BF.svg)](https://secure.php.net/)
-[![Packagist](https://img.shields.io/packagist/v/io-developer/php-whois.svg)](https://packagist.org/packages/io-developer/php-whois)
+[![Packagist](https://img.shields.io/packagist/v/vzhabonos/php-whois.svg)](https://packagist.org/packages/vzhabonos/php-whois)
 
 PHP WHOIS client implementation. Sends the queries directly to the WHOIS services.
 
@@ -15,7 +15,7 @@ PHP WHOIS client implementation. Sends the queries directly to the WHOIS service
 ## Installation
 
 ##### System requirements:
-* PHP >= __7.2__ (old versions supports __5.4+__)
+* PHP >= __7.2__
 * php-curl
 * php-mbstring
 * Open port __43__ in firewall
@@ -29,12 +29,12 @@ Optional:
 
 ##### Composer:
 ````
-composer require io-developer/php-whois
+composer require vzhabonos/php-whois
 ````
 or composer.json:
 ````
 "require": {
-    "io-developer/php-whois": "^4.0"
+    "vzhabonos/php-whois": "^4.0"
 }
 ````
 

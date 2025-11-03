@@ -182,6 +182,36 @@ services:
     command: '/run-tests.sh'
 
 
+  php-8.4:
+    volumes:
+      - php84:/workdir
+      - "./bin:/workdir/bin:ro"
+      - "./src:/workdir/src:ro"
+      - "./tests:/workdir/tests:ro"
+      - "./composer.json:/workdir/composer.json:ro"
+    build:
+      context: .
+      args:
+        IMAGE: php:8.4-cli-alpine
+        PACKAGES: git zip unzip icu-dev
+    command: '/run-tests.sh'
+
+  php-8.4_intl:
+    volumes:
+      - php84_intl:/workdir
+      - "./bin:/workdir/bin:ro"
+      - "./src:/workdir/src:ro"
+      - "./tests:/workdir/tests:ro"
+      - "./composer.json:/workdir/composer.json:ro"
+    build:
+      context: .
+      args:
+        IMAGE: php:8.4-cli-alpine
+        PACKAGES: git zip unzip icu-dev
+        PHPMODS: intl
+    command: '/run-tests.sh'
+
+
 volumes:
   php72:
   php72_intl:
@@ -195,4 +225,6 @@ volumes:
   php81_intl:
   php82:
   php82_intl:
+  php84:
+  php84_intl:
 
