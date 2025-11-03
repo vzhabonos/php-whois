@@ -1,6 +1,6 @@
 {
-    "name": "io-developer/php-whois",
-    "description": "PHP WHOIS provides parsed and raw whois lookup of domains and ASN routes. PHP 5.4+ and 7+ compatible ",
+    "name": "vzhabonos/php-whois",
+    "description": "PHP WHOIS provides parsed and raw whois lookup of domains and ASN routes. PHP 7.2+ compatible ",
     "keywords": [
         "php",
         "whois",
@@ -11,12 +11,11 @@
         "info",
         "asn",
         "routes",
-        "parser",
-        "црщшы"
+        "parser"
     ],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/io-developer/php-whois",
+    "homepage": "https://github.com/vzhabonos/php-whois",
     "authors": [
         {
             "name": "Sergey Sedyshev",
