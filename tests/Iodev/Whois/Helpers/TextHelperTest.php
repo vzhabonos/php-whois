@@ -25,8 +25,8 @@ class TextHelperTest extends TestCase
     public function assertToUtf8($inputFile, $outputFile)
     {
         $input = self::loadContent($inputFile);
-        $output = preg_replace('~\r\n|\r|\n~ui', '\n', self::loadContent($outputFile));
-        $utf8 = preg_replace('~\r\n|\r|\n~ui', '\n', TextHelper::toUtf8($input));
+        $output = preg_replace("~\r\n|\r|\n~ui", '\n', self::loadContent($outputFile));
+        $utf8 = preg_replace("~\r\n|\r|\n~ui", '\n', TextHelper::toUtf8($input));
         self::assertEquals($output, $utf8);
     }
 
